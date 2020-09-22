@@ -8,7 +8,11 @@
 
 import Foundation
 import Darwin
-import RequiredHeaders
+#if os(iOS)
+import RequiredHeadersIOS
+#elseif os(macOS)
+import RequiredHeadersMACOS
+#endif
 
 public class SwiftMAC {
     

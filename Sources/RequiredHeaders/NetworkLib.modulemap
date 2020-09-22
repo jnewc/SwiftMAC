@@ -1,6 +1,0 @@
-module NetworkLib {
-    header "Headers/route.h"
-    header "Headers/if_arp.h"
-    header "Headers/if_ether.h"
-    export *
-}

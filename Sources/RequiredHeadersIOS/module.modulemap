@@ -1,0 +1,18 @@
+module RequiredHeaders {
+    header "include/if_arp.h"
+    header "include/if_ether.h"
+
+    module * {
+        requires macos
+        header "include/route-macos.h"
+        export *
+    }
+
+    module * {
+        requires ios
+        header "include/route-ios.h"
+        export *
+    }
+    
+    export *
+}
